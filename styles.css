@@ -352,7 +352,30 @@ h3 { font-size: 1.3rem;                      font-weight: 600; }
     box-shadow: 0 2px 24px rgba(0,0,0,0.05);
   }
 
-.nav-toggle { display: none; }
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0.35rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  z-index: 101;
+}
+
+.nav-toggle__bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-white);
+  border-radius: 0;
+  transition:
+    transform 300ms var(--ease-move),
+    opacity 200ms var(--ease-enter);
+}
 
 .nav__list {
   display: flex;
