@@ -1527,7 +1527,18 @@ h1, h2, h3, h4 { color: var(--color-white); }
     --dur-stagger: 60ms;
   }
 
-  .nav-toggle { display: block; }
+  .nav-toggle {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .header__inner {
+    justify-content: center;
+    position: relative;
+  }
 
   .nav__list {
     position: fixed;
