@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios Jurídicos — Rodrigues y Asociados</title>
+  <meta name="description" content="Áreas de práctica de Rodrigues y Asociados: Derecho Corporativo, Derecho Civil, Asesoría Fiscal y Litigios. Asesoría legal integral en Maracay, Estado Aragua.">
+  <meta name="theme-color" content="#1C1A17">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="progress-bar" id="progress-bar" role="progressbar" aria-hidden="true"></div>
+
+  <!-- ===================================================
+       HEADER
+       =================================================== -->
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Rodrigues y Asociados, volver al inicio">
+        <span class="gold-diamond" aria-hidden="true">
+          <svg width="6" height="6" viewBox="0 0 6 6" fill="none" stroke="currentColor" stroke-width="0.8">
+            <path d="M3 0.5L5.5 3L3 5.5L0.5 3Z"/>
+          </svg>
+        </span>
+        Rodrigues <em>y</em> Asociados
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+      >
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav role="navigation" aria-label="Navegación principal">
+        <ul class="nav__list" id="nav-list">
+          <li><a href="index.html"          class="nav__link">Inicio</a></li>
+          <li><a href="nosotros.html"        class="nav__link">Quiénes Somos</a></li>
+          <li><a href="servicios.html"       class="nav__link nav__link--active">Servicios</a></li>
+          <li><a href="contacto.html"        class="nav__link">Contacto</a></li>
+          <li><a href="contacto.html"        class="btn btn--primary nav__cta" data-magnetic>Agendar Consulta</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__backdrop" id="nav-backdrop" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero" aria-label="Áreas de Práctica">
+    <div class="page-hero__media" aria-hidden="true">
+      <img
+        src="https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        alt=""
+        loading="eager"
+      >
+    </div>
+    <div class="page-hero__overlay" aria-hidden="true"></div>
+    <svg class="noise-svg" aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+      <rect width="100%" height="100%" filter="url(#noise)" opacity="0.8"/>
+    </svg>
+    <div class="container page-hero__content">
+      <p class="section-subtitle" style="justify-content:center;">
+        <span class="gold-diamond" aria-hidden="true">
+          <svg width="6" height="6" viewBox="0 0 6 6" fill="none" stroke="currentColor" stroke-width="0.8">
+            <path d="M3 0.5L5.5 3L3 5.5L0.5 3Z"/>
+          </svg>
+        </span>
+        Áreas de Práctica
+      </p>
+      <h1 class="gradient-text">Especialidades Jurídicas</h1>
+      <hr class="gold-rule" aria-hidden="true">
+      <p class="page-hero__desc">
+        Asesoría integral con un enfoque estratégico y orientado a resultados concretos.
+      </p>
+    </div>
+  </section>
+
+  <main role="main">
+
+    <!-- ===== SERVICIO: CORPORATIVO ===== -->
+    <section class="section" aria-labelledby="corp-title">
+      <div class="container">
+        <div class="service-detail reveal">
+          <div class="service-detail__header">
+            <div class="service-detail__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="8" width="16" height="14"/>
+                <path d="M2 22h20"/>
+                <path d="M12 2L4 8h16L12 2z"/>
+                <line x1="12" y1="12" x2="12" y2="16"/>
+              </svg>
+            </div>
+            <h2 id="corp-title">Derecho Corporativo y Empresarial</h2>
+          </div>
+          <p>
+            Brindamos asesoría jurídica integral a empresas de todos los tamaños y sectores.
+            Acompañamos a nuestros clientes desde la constitución de sociedades mercantiles
+            hasta la planeación de estrategias corporativas complejas. Nuestro equipo cuenta
+            con amplia experiencia en la redacción y negociación de contratos mercantiles,
+            nacionales e internacionales, así como en procesos de fusiones, adquisiciones y
+            reestructuraciones empresariales.
+          </p>
+          <p>
+            Además, ofrecemos consultoría en cumplimiento normativo, gobierno corporativo y
+            resolución de controversias societarias. Entendemos las dinámicas del mundo
+            empresarial moderno y trabajamos codo a codo con nuestros clientes para anticipar
+            riesgos, aprovechar oportunidades y garantizar que cada decisión esté respaldada
+            por una base jurídica sólida.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIVISOR ===== -->
+    <div class="section-divider" aria-hidden="true">
+      <span class="section-divider__line"></span>
+      <span class="gold-diamond">
+        <svg width="5" height="5" viewBox="0 0 6 6" fill="none" stroke="currentColor" stroke-width="0.8">
+          <path d="M3 0.5L5.5 3L3 5.5L0.5 3Z"/>
+        </svg>
+      </span>
+      <span class="section-divider__line"></span>
+    </div>
+
+    <!-- ===== SERVICIO: CIVIL ===== -->
+    <section class="section section--alt" aria-labelledby="civil-title">
+      <div class="container">
+        <div class="service-detail reveal">
+          <div class="service-detail__header">
+            <div class="service-detail__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="8" y1="13" x2="16" y2="13"/>
+                <line x1="8" y1="17" x2="12" y2="17"/>
+              </svg>
+            </div>
+            <h2 id="civil-title">Derecho Civil y Patrimonial</h2>
+          </div>
+          <p>
+            En el ámbito del derecho civil ofrecemos una cobertura completa que abarca desde
+            la redacción y revisión de contratos civiles hasta la representación en juicios
+            de responsabilidad civil, sucesiones y derechos reales. Asesoramos a particulares
+            y empresas en la gestión de su patrimonio, garantizando que cada transacción y
+            acuerdo cuente con la debida protección legal.
+          </p>
+          <p>
+            Nuestro enfoque se caracteriza por un análisis minucioso de cada caso y una
+            comunicación clara con el cliente, de modo que las decisiones se tomen con pleno
+            conocimiento de sus implicaciones jurídicas. Atendemos también controversias sobre
+            propiedad horizontal, arrendamientos, servidumbres y cualquier otra materia que
+            requiera una solución civil sólida y bien fundamentada.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIVISOR ===== -->
+    <div class="section-divider" aria-hidden="true">
+      <span class="section-divider__line"></span>
+      <span class="gold-diamond">
+        <svg width="5" height="5" viewBox="0 0 6 6" fill="none" stroke="currentColor" stroke-width="0.8">
+          <path d="M3 0.5L5.5 3L3 5.5L0.5 3Z"/>
+        </svg>
+      </span>
+      <span class="section-divider__line"></span>
+    </div>
+
+    <!-- ===== SERVICIO: FISCAL ===== -->
+    <section class="section" aria-labelledby="fiscal-title">
+      <div class="container">
+        <div class="service-detail reveal">
+          <div class="service-detail__header">
+            <div class="service-detail__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+                <line x1="2" y1="20" x2="22" y2="20"/>
+              </svg>
+            </div>
+            <h2 id="fiscal-title">Asesoría Fiscal y Tributaria</h2>
+          </div>
+          <p>
+            La planificación fiscal es una herramienta estratégica indispensable para la
+            salud financiera de cualquier empresa o patrimonio personal. Nuestro equipo de
+            asesoría fiscal acompaña a los clientes en el diseño de estructuras tributarias
+            eficientes y plenamente ajustadas a la normativa vigente, minimizando riesgos y
+            optimizando la carga impositiva dentro del marco legal.
+          </p>
+          <p>
+            Representamos a contribuyentes en procedimientos administrativos y contenciosos
+            ante las autoridades fiscales, incluyendo auditorías, recursos de revocación y
+            juicios de nulidad. También ofrecemos consultoría en materia de cumplimiento de
+            obligaciones fiscales, comercio exterior, precios de transferencia y regímenes
+            especiales. Nuestro objetivo es brindar certeza y tranquilidad en un área
+            especialmente sensible para la toma de decisiones empresariales.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIVISOR ===== -->
+    <div class="section-divider" aria-hidden="true">
+      <span class="section-divider__line"></span>
+      <span class="gold-diamond">
+        <svg width="5" height="5" viewBox="0 0 6 6" fill="none" stroke="currentColor" stroke-width="0.8">
+          <path d="M3 0.5L5.5 3L3 5.5L0.5 3Z"/>
+        </svg>
+      </span>
+      <span class="section-divider__line"></span>
+    </div>
+
+    <!-- ===== SERVICIO: LITIGIOS ===== -->
+    <section class="section section--alt" aria-labelledby="litigios-title">
+      <div class="container">
+        <div class="service-detail reveal">
+          <div class="service-detail__header">
+            <div class="service-detail__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="2" x2="12" y2="22"/>
+                <line x1="12" y1="2" x2="4" y2="8"/>
+                <line x1="12" y1="2" x2="20" y2="8"/>
+                <line x1="4" y1="8" x2="20" y2="8"/>
+                <circle cx="7.5" cy="11.5" r="1.5"/>
+                <circle cx="16.5" cy="11.5" r="1.5"/>
+              </svg>
+            </div>
+            <h2 id="litigios-title">Litigios y Resolución de Conflictos</h2>
+          </div>
+          <p>
+            Nuestra área de litigios está conformada por abogados con vasta experiencia en
+            juicios orales y escritos, tanto en materia civil como mercantil, administrativa
+            y penal. Representamos a nuestros clientes con una defensa técnica rigurosa y
+            una estrategia procesal diseñada a la medida de cada caso. Creemos en el litigio
+            como último recurso, pero cuando es necesario, nos preparamos para ganar.
+          </p>
+          <p>
+            Además de la representación judicial, ofrecemos servicios de arbitraje, mediación
+            y otros métodos alternativos de resolución de conflictos. Nuestra experiencia nos
+            permite identificar rápidamente las vías más eficientes para resolver controversias,
+            ahorrando tiempo y recursos a nuestros clientes. La confidencialidad, la
+            preparación meticulosa y la capacidad de anticipación son nuestras mejores armas
+            en la sala de audiencias.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIVISOR ===== -->
+    <div class="section-divider" aria-hidden="true">
+      <span class="section-divider__line"></span>
+      <span class="gold-diamond">
+        <svg width="5" height="5" viewBox="0 0 6 6" fill="none" stroke="currentColor" stroke-width="0.8">
+          <path d="M3 0.5L5.5 3L3 5.5L0.5 3Z"/>
+        </svg>
+      </span>
+      <span class="section-divider__line"></span>
+    </div>
+
+    <!-- ===== CTA ===== -->
+    <section class="section" aria-label="Llamado a la acción">
+      <div class="container">
+        <div class="reveal" style="text-align: center;">
+          <h2 style="margin-bottom: 1rem;">¿Necesita asesoría legal?</h2>
+          <p style="color: rgba(255,255,255,0.65); max-width: 560px; margin: 0 auto 2rem;">
+            Contáctenos para una primera consulta. Nuestro equipo evaluará su caso y le
+            ofrecerá la mejor estrategia jurídica.
+          </p>
+          <a href="contacto.html" class="btn btn--primary" data-magnetic>Solicitar Consulta</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================
+       FOOTER
+       =================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <hr class="footer__gold-accent" aria-hidden="true">
+      <div class="footer__inner">
+        <p class="footer__copy">&copy; 2026 Rodrigues y Asociados. Todos los derechos reservados.</p>
+        <span class="footer__logo">
+          <span class="gold-diamond" aria-hidden="true">
+            <svg width="5" height="5" viewBox="0 0 6 6" fill="none" stroke="currentColor" stroke-width="0.8">
+              <path d="M3 0.5L5.5 3L3 5.5L0.5 3Z"/>
+            </svg>
+          </span>
+          Rodrigues <em>y</em> Asociados
+        </span>
+        <div class="footer__links">
+          <a href="index.html">Inicio</a>
+          <a href="nosotros.html">Quiénes Somos</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================
+       INTERSECTION OBSERVER — SCROLL REVEALS
+       =================================================== -->
+  <script>
+    (function() {
+      'use strict';
+
+      /* ---------- Mobile Nav ---------- */
+      var toggle = document.querySelector('.nav-toggle');
+      var navList = document.getElementById('nav-list');
+      var backdrop = document.getElementById('nav-backdrop');
+      if (toggle && navList) {
+        function openNav() {
+          toggle.classList.add('active');
+          navList.classList.add('nav__list--open');
+          if (backdrop) backdrop.classList.add('nav__backdrop--visible');
+          toggle.setAttribute('aria-expanded', 'true');
+          toggle.setAttribute('aria-label', 'Cerrar menú de navegación');
+        }
+        function closeNav() {
+          toggle.classList.remove('active');
+          navList.classList.remove('nav__list--open');
+          if (backdrop) backdrop.classList.remove('nav__backdrop--visible');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.setAttribute('aria-label', 'Abrir menú de navegación');
+        }
+        toggle.addEventListener('click', function() {
+          if (navList.classList.contains('nav__list--open')) { closeNav(); }
+          else { openNav(); }
+        });
+        if (backdrop) backdrop.addEventListener('click', closeNav);
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && navList.classList.contains('nav__list--open')) closeNav();
+        });
+        navList.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', closeNav);
+        });
+      }
+
+      var reveals = document.querySelectorAll('.reveal');
+      if (reveals.length && 'IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('reveal--visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        reveals.forEach(function(el) { observer.observe(el); });
+      } else {
+        reveals.forEach(function(el) { el.classList.add('reveal--visible'); });
+      }
+
+      var header = document.querySelector('.header');
+      var ticking = false;
+      function updateShadow() {
+        header.classList.toggle('header--scrolled', window.scrollY > 10);
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) { requestAnimationFrame(updateShadow); ticking = true; }
+      }, { passive: true });
+
+      /* ---------- Progress Bar ---------- */
+      var bar = document.getElementById('progress-bar');
+      var barTicking = false;
+      if (bar) {
+        window.addEventListener('scroll', function() {
+          if (!barTicking) {
+            requestAnimationFrame(function() {
+              var h = document.documentElement;
+              var p = (window.scrollY / (h.scrollHeight - h.clientHeight)) * 100;
+              bar.style.width = p + '%';
+              barTicking = false;
+            });
+            barTicking = true;
+          }
+        }, { passive: true });
+      }
+
+      /* ---------- Magnetic Buttons ---------- */
+      var magneticBtns = document.querySelectorAll('[data-magnetic]');
+      magneticBtns.forEach(function(btn) {
+        btn.addEventListener('mousemove', function(e) {
+          var rect = btn.getBoundingClientRect();
+          var x = e.clientX - rect.left - rect.width / 2;
+          var y = e.clientY - rect.top - rect.height / 2;
+          btn.style.transform = 'translate(' + (x * 0.12) + 'px, ' + (y * 0.12) + 'px)';
+        });
+        btn.addEventListener('mouseleave', function() {
+          btn.style.transform = '';
+        });
+      });
+
+      /* ---------- Back to Top ---------- */
+      var topBtn = document.getElementById('back-to-top');
+      var topTicking = false;
+      if (topBtn) {
+        window.addEventListener('scroll', function() {
+          if (!topTicking) {
+            requestAnimationFrame(function() {
+              topBtn.classList.toggle('back-to-top--visible', window.scrollY > 500);
+              topTicking = false;
+            });
+            topTicking = true;
+          }
+        }, { passive: true });
+        topBtn.addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+    })();
+  </script>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Volver al inicio">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+</body>
+</html>

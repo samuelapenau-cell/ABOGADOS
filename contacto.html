@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Rodrigues y Asociados</title>
+  <meta name="description" content="Póngase en contacto con Rodrigues y Asociados. Dirección, teléfonos, correo electrónico y formulario de contacto para solicitar una consulta jurídica.">
+  <meta name="theme-color" content="#1C1A17">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.4rem 2rem;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--color-gray-light);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="progress-bar" id="progress-bar" role="progressbar" aria-hidden="true"></div>
+
+  <!-- ===================================================
+       HEADER
+       =================================================== -->
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Rodrigues y Asociados, volver al inicio">
+        <span class="gold-diamond" aria-hidden="true">
+          <svg width="6" height="6" viewBox="0 0 6 6" fill="none" stroke="currentColor" stroke-width="0.8">
+            <path d="M3 0.5L5.5 3L3 5.5L0.5 3Z"/>
+          </svg>
+        </span>
+        Rodrigues <em>y</em> Asociados
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+      >
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav role="navigation" aria-label="Navegación principal">
+        <ul class="nav__list" id="nav-list">
+          <li><a href="index.html"          class="nav__link">Inicio</a></li>
+          <li><a href="nosotros.html"        class="nav__link">Quiénes Somos</a></li>
+          <li><a href="servicios.html"       class="nav__link">Servicios</a></li>
+          <li><a href="contacto.html"        class="nav__link nav__link--active">Contacto</a></li>
+          <li><a href="contacto.html"        class="btn btn--primary nav__cta" data-magnetic>Agendar Consulta</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__backdrop" id="nav-backdrop" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero" aria-label="Contacto">
+    <div class="page-hero__media" aria-hidden="true">
+      <img
+        src="https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        alt=""
+        loading="eager"
+      >
+    </div>
+    <div class="page-hero__overlay" aria-hidden="true"></div>
+    <svg class="noise-svg" aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+      <rect width="100%" height="100%" filter="url(#noise)" opacity="0.8"/>
+    </svg>
+    <div class="container page-hero__content">
+      <p class="section-subtitle" style="justify-content:center;">
+        <span class="gold-diamond" aria-hidden="true">
+          <svg width="6" height="6" viewBox="0 0 6 6" fill="none" stroke="currentColor" stroke-width="0.8">
+            <path d="M3 0.5L5.5 3L3 5.5L0.5 3Z"/>
+          </svg>
+        </span>
+        Contacto
+      </p>
+      <h1 class="gradient-text">Hablemos de su caso</h1>
+      <hr class="gold-rule" aria-hidden="true">
+      <p class="page-hero__desc">
+        Escríbanos y nuestro equipo se pondrá en contacto en menos de 24 horas hábiles.
+      </p>
+    </div>
+  </section>
+
+  <main role="main">
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="section" aria-labelledby="contact-page-title">
+      <div class="container">
+        <div class="contact">
+          <!-- Columna 1: Información Corporativa -->
+          <div class="contact__info reveal">
+            <h2 id="contact-page-title" class="sr-only">Información de contacto</h2>
+
+            <div class="contact__detail">
+              <span class="contact__detail-icon--custom" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </span>
+              <div>
+                <strong style="display:block; font-family:var(--font-display); font-size:0.95rem; margin-bottom:0.15rem;">Dirección</strong>
+                <span>Centro Comercial San Jacinto,<br>Maracay, Estado Aragua</span>
+              </div>
+            </div>
+
+            <div class="contact__detail">
+              <span class="contact__detail-icon--custom" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+              <div>
+                <strong style="display:block; font-family:var(--font-display); font-size:0.95rem; margin-bottom:0.15rem;">Teléfono</strong>
+                <span>+58 (424) 123 4567</span>
+              </div>
+            </div>
+
+            <div class="contact__detail">
+              <span class="contact__detail-icon--custom" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <polyline points="22,7 12,13 2,7"/>
+                </svg>
+              </span>
+              <div>
+                <strong style="display:block; font-family:var(--font-display); font-size:0.95rem; margin-bottom:0.15rem;">Correo Electrónico</strong>
+                <span>contacto@rodriguezyasociados.com</span>
+              </div>
+            </div>
+
+            <div class="contact__detail">
+              <span class="contact__detail-icon--custom" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </span>
+              <div>
+                <strong style="display:block; font-family:var(--font-display); font-size:0.95rem; margin-bottom:0.15rem;">Horarios de Atención</strong>
+                <div class="schedule-grid">
+                  <span class="schedule-grid__day">Lunes a Viernes</span>
+                  <span class="schedule-grid__hour">8:00 am – 5:00 pm</span>
+                  <span class="schedule-grid__day">Sábados</span>
+                  <span class="schedule-grid__hour">9:00 am – 1:00 pm</span>
+                  <span class="schedule-grid__day">Domingos</span>
+                  <span class="schedule-grid__hour">Cerrado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna 2: Formulario Ampliado -->
+          <div class="form reveal" style="transition-delay: 100ms">
+            <!-- ⚠️ Reemplaza "xxxxxxx" con tu ID de formulario de Formspree -->
+            <form id="contact-form" action="https://formspree.io/f/xxxxxxx" method="POST">
+              <input type="hidden" name="_subject" value="Nuevo contacto desde RodriguesyAsociados.com">
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+              <div class="form__group">
+                <label for="nombre" class="form__label">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" class="form__input" placeholder="Ej. Juan Pérez López" required autocomplete="name" pattern=".{2,}" title="El nombre debe tener al menos 2 caracteres">
+                <span class="form__error">Por favor ingrese su nombre completo.</span>
+              </div>
+
+              <div class="form__group">
+                <label for="telefono" class="form__label">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" class="form__input" placeholder="Ej. 0412 123 4567" required autocomplete="tel" pattern="[\d\s\+\-\(\)]{7,15}" title="Ingrese un número telefónico válido">
+                <span class="form__error">Por favor ingrese un número telefónico válido.</span>
+              </div>
+
+              <div class="form__group">
+                <label for="correo" class="form__label">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" class="form__input" placeholder="Ej. juan@ejemplo.com" required autocomplete="email">
+                <span class="form__error">Por favor ingrese un correo electrónico válido.</span>
+              </div>
+
+              <div class="form__group">
+                <label for="area" class="form__label">Área Jurídica de Interés</label>
+                <div class="form__select-wrapper">
+                  <select id="area" name="area" class="form__select" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="corporativo">Derecho Corporativo</option>
+                    <option value="civil">Derecho Civil</option>
+                    <option value="fiscal">Asesoría Fiscal</option>
+                    <option value="litigios">Litigios</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+                <span class="form__error">Por favor seleccione un área jurídica.</span>
+              </div>
+
+              <div class="form__group">
+                <label for="mensaje" class="form__label">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" class="form__textarea" rows="5" placeholder="Describa su caso o consulta con el mayor detalle posible..." required maxlength="2000"></textarea>
+                <span class="form__error">Por favor escriba un mensaje.</span>
+              </div>
+
+              <button type="submit" class="btn btn--primary form__btn" data-magnetic>Enviar Mensaje</button>
+            </form>
+            <div class="form__success" id="form-success">
+              <div class="form__success-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+              </div>
+              <h3>Mensaje enviado con éxito</h3>
+              <p>Gracias por contactarnos. Nuestro equipo le responderá en menos de 24 horas hábiles.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================
+       FOOTER
+       =================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <hr class="footer__gold-accent" aria-hidden="true">
+      <div class="footer__inner">
+        <p class="footer__copy">&copy; 2026 Rodrigues y Asociados. Todos los derechos reservados.</p>
+        <span class="footer__logo">
+          <span class="gold-diamond" aria-hidden="true">
+            <svg width="5" height="5" viewBox="0 0 6 6" fill="none" stroke="currentColor" stroke-width="0.8">
+              <path d="M3 0.5L5.5 3L3 5.5L0.5 3Z"/>
+            </svg>
+          </span>
+          Rodrigues <em>y</em> Asociados
+        </span>
+        <div class="footer__links">
+          <a href="index.html">Inicio</a>
+          <a href="nosotros.html">Quiénes Somos</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================
+       INTERSECTION OBSERVER — SCROLL REVEALS
+       =================================================== -->
+  <script>
+    (function() {
+      'use strict';
+
+      /* ---------- Mobile Nav ---------- */
+      var toggle = document.querySelector('.nav-toggle');
+      var navList = document.getElementById('nav-list');
+      var backdrop = document.getElementById('nav-backdrop');
+      if (toggle && navList) {
+        function openNav() {
+          toggle.classList.add('active');
+          navList.classList.add('nav__list--open');
+          if (backdrop) backdrop.classList.add('nav__backdrop--visible');
+          toggle.setAttribute('aria-expanded', 'true');
+          toggle.setAttribute('aria-label', 'Cerrar menú de navegación');
+        }
+        function closeNav() {
+          toggle.classList.remove('active');
+          navList.classList.remove('nav__list--open');
+          if (backdrop) backdrop.classList.remove('nav__backdrop--visible');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.setAttribute('aria-label', 'Abrir menú de navegación');
+        }
+        toggle.addEventListener('click', function() {
+          if (navList.classList.contains('nav__list--open')) { closeNav(); }
+          else { openNav(); }
+        });
+        if (backdrop) backdrop.addEventListener('click', closeNav);
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && navList.classList.contains('nav__list--open')) closeNav();
+        });
+        navList.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', closeNav);
+        });
+      }
+
+      var reveals = document.querySelectorAll('.reveal');
+      if (reveals.length && 'IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('reveal--visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        reveals.forEach(function(el) { observer.observe(el); });
+      } else {
+        reveals.forEach(function(el) { el.classList.add('reveal--visible'); });
+      }
+
+      var header = document.querySelector('.header');
+      var ticking = false;
+      function updateShadow() {
+        header.classList.toggle('header--scrolled', window.scrollY > 10);
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) { requestAnimationFrame(updateShadow); ticking = true; }
+      }, { passive: true });
+
+      /* ---------- Progress Bar ---------- */
+      var bar = document.getElementById('progress-bar');
+      var barTicking = false;
+      if (bar) {
+        window.addEventListener('scroll', function() {
+          if (!barTicking) {
+            requestAnimationFrame(function() {
+              var h = document.documentElement;
+              var p = (window.scrollY / (h.scrollHeight - h.clientHeight)) * 100;
+              bar.style.width = p + '%';
+              barTicking = false;
+            });
+            barTicking = true;
+          }
+        }, { passive: true });
+      }
+
+      /* ---------- Magnetic Buttons ---------- */
+      var magneticBtns = document.querySelectorAll('[data-magnetic]');
+      magneticBtns.forEach(function(btn) {
+        btn.addEventListener('mousemove', function(e) {
+          var rect = btn.getBoundingClientRect();
+          var x = e.clientX - rect.left - rect.width / 2;
+          var y = e.clientY - rect.top - rect.height / 2;
+          btn.style.transform = 'translate(' + (x * 0.12) + 'px, ' + (y * 0.12) + 'px)';
+        });
+        btn.addEventListener('mouseleave', function() {
+          btn.style.transform = '';
+        });
+      });
+
+      /* ---------- Back to Top ---------- */
+      var topBtn = document.getElementById('back-to-top');
+      var topTicking = false;
+      if (topBtn) {
+        window.addEventListener('scroll', function() {
+          if (!topTicking) {
+            requestAnimationFrame(function() {
+              topBtn.classList.toggle('back-to-top--visible', window.scrollY > 500);
+              topTicking = false;
+            });
+            topTicking = true;
+          }
+        }, { passive: true });
+        topBtn.addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      /* ---------- Form Validation ---------- */
+      var form = document.getElementById('contact-form');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          var valid = true;
+          var groups = form.querySelectorAll('.form__group');
+          groups.forEach(function(g) {
+            g.classList.remove('form__group--error');
+            var input = g.querySelector('.form__input, .form__textarea, .form__select');
+            if (input && input.hasAttribute('required') && !input.value.trim()) {
+              g.classList.add('form__group--error');
+              valid = false;
+            }
+            if (input && input.type === 'email' && input.value.trim()) {
+              if (!input.value.includes('@') || !input.value.includes('.')) {
+                g.classList.add('form__group--error');
+                valid = false;
+              }
+            }
+            if (input && input.pattern && input.value.trim()) {
+              var re = new RegExp(input.pattern);
+              if (!re.test(input.value)) {
+                g.classList.add('form__group--error');
+                valid = false;
+              }
+            }
+          });
+          if (valid) {
+            var formEl = form;
+            var successEl = document.getElementById('form-success');
+            var btn = formEl.querySelector('.form__btn');
+            btn.disabled = true;
+            btn.textContent = 'Enviando...';
+            fetch(formEl.action, {
+              method: 'POST',
+              body: new FormData(formEl),
+              headers: { 'Accept': 'application/json' }
+            }).then(function(res) {
+              if (res.ok) {
+                formEl.reset();
+                formEl.style.display = 'none';
+                successEl.classList.add('form__success--visible');
+              } else {
+                alert('Hubo un error al enviar el mensaje. Por favor intente de nuevo.');
+              }
+            }).catch(function() {
+              alert('Error de conexión. Verifique su internet e intente de nuevo.');
+            }).finally(function() {
+              btn.disabled = false;
+              btn.textContent = 'Enviar Mensaje';
+            });
+          }
+        });
+      }
+    })();
+  </script>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Volver al inicio">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+</body>
+</html>
