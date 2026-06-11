@@ -259,6 +259,7 @@
   </footer>
 
   <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+  <div class="cursor-glow__ring" id="cursor-glow-ring" aria-hidden="true"></div>
 
   <button class="back-to-top" id="back-to-top" aria-label="Volver al inicio">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
@@ -436,18 +437,27 @@
       }
       /* ---------- Cursor Glow ---------- */
       var glow = document.getElementById('cursor-glow');
+      var ring = document.getElementById('cursor-glow-ring');
       if (glow) {
-        var gMouseX = 0, gMouseY = 0, gPosX = -160, gPosY = -160, gActive = false;
-        document.addEventListener('mousemove', function(e) {
+        var gMouseX = -999, gMouseY = -999, gPosX = -140, gPosY = -140, gActive = false;
+        var gLerp = 0.1;
+        function gMove(e) {
           gMouseX = e.clientX; gMouseY = e.clientY;
-          if (!gActive) { gActive = true; glow.classList.add('cursor-glow--visible'); gPosX = gMouseX; gPosY = gMouseY; }
-        });
-        document.addEventListener('mouseleave', function() { gActive = false; glow.classList.remove('cursor-glow--visible'); });
-        (function glowTick() {
-          gPosX += (gMouseX - gPosX) * 0.08; gPosY += (gMouseY - gPosY) * 0.08;
-          glow.style.left = gPosX + 'px'; glow.style.top = gPosY + 'px';
-          requestAnimationFrame(glowTick);
+          if (!gActive) { gActive = true; glow.classList.add('cursor-glow--visible'); if (ring) ring.classList.add('cursor-glow__ring--visible'); gPosX = gMouseX; gPosY = gMouseY; }
+        }
+        document.addEventListener('mousemove', gMove, { passive: true });
+        document.addEventListener('mouseleave', function() { gActive = false; glow.classList.remove('cursor-glow--visible'); if (ring) ring.classList.remove('cursor-glow__ring--visible'); });
+        (function gTick() {
+          gPosX += (gMouseX - gPosX) * gLerp; gPosY += (gMouseY - gPosY) * gLerp;
+          glow.style.transform = 'translate3d(' + (gPosX - 140) + 'px, ' + (gPosY - 140) + 'px, 0)';
+          if (ring) ring.style.transform = 'translate3d(' + (gPosX - 20) + 'px, ' + (gPosY - 20) + 'px, 0)';
+          requestAnimationFrame(gTick);
         })();
+        var gTargets = document.querySelectorAll('a, .btn, .service-card, .value-card, .nav__link, .form__input, .form__textarea, .form__select');
+        gTargets.forEach(function(el) {
+          el.addEventListener('mouseenter', function() { glow.classList.add('cursor-glow--active'); });
+          el.addEventListener('mouseleave', function() { glow.classList.remove('cursor-glow--active'); });
+        });
       }
     })();
   </script>
