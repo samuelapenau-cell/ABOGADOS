@@ -1,7 +1,13 @@
 .agents/
-skills-lock.json
 .vs/
 .vscode/
 *.log
 .DS_Store
 Thumbs.db
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets*
+config.json

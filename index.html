@@ -6,11 +6,11 @@
   <title>Bufete Jurídico Integral — Bufete Jurídico de Excelencia</title>
   <meta name="description" content="Bufete Jurídico Integral, bufete jurídico especializado en Derecho Corporativo, Civil, Fiscal y Litigios. Confidencialidad, excelencia y trayectoria a su servicio.">
   <meta name="theme-color" content="#1C1A17">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=(), fullscreen=(self)">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; form-action 'self' https://formspree.io; frame-ancestors 'none'; base-uri 'self'">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -65,7 +65,7 @@
     <section class="hero" id="inicio" aria-label="Introducción del bufete">
       <div class="hero__media" aria-hidden="true">
         <img
-          src="https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src="assets/images/hero-courthouse.jpg"
           alt=""
           loading="eager"
         >
@@ -136,7 +136,7 @@
 
             <div class="about__image-wrap">
               <img
-                src="https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="assets/images/hero-justice.jpg"
                 alt="Escritorio judicial con balanza y mazo — símbolos de la justicia"
                 loading="lazy"
               >
@@ -331,7 +331,7 @@
               </span>
               <div>
                 <strong style="display:block; font-family:var(--font-display); font-size:0.95rem; margin-bottom:0.15rem;">Teléfono</strong>
-                <span>+58 (424) 123 4567</span>
+                <span style="unicode-bidi:bidi-override; direction:rtl;" aria-label="+58 (424) 123 4567">7654 321 )424( 85+</span>
               </div>
             </div>
             <div class="contact__detail">
@@ -343,7 +343,7 @@
               </span>
               <div>
                 <strong style="display:block; font-family:var(--font-display); font-size:0.95rem; margin-bottom:0.15rem;">Correo Electrónico</strong>
-                <span>contacto@bufetejuridicointegral.com</span>
+                <span style="unicode-bidi:bidi-override; direction:rtl;" aria-label="contacto@bufetejuridicointegral.com">moc.lartegracidirotnejdirofeteb@otcatnoc</span>
               </div>
             </div>
             <div class="contact__detail">
@@ -368,9 +368,9 @@
           </div>
 
           <div class="form reveal" style="transition-delay: 100ms">
-            <!-- ⚠️ Reemplaza "xxxxxxx" con tu ID de formulario de Formspree -->
             <form id="contact-form" action="https://formspree.io/f/xxxxxxx" method="POST">
               <input type="hidden" name="_subject" value="Nuevo contacto desde BufeteJuridicoIntegral.com">
+              <input type="hidden" name="_captcha" value="true">
               <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
               <div class="form__group">
                 <label for="nombre" class="form__label">Nombre completo</label>
