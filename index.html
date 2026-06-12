@@ -371,20 +371,20 @@
             <form id="contact-form" action="https://formspree.io/f/xxxxxxx" method="POST">
               <input type="hidden" name="_subject" value="Nuevo contacto desde BufeteJuridicoIntegral.com">
               <input type="hidden" name="_captcha" value="true">
-              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+              <input type="text" name="_gotcha" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
               <div class="form__group">
                 <label for="nombre" class="form__label">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" class="form__input" placeholder="Ej. Juan Pérez López" required autocomplete="name" pattern=".{2,}" title="El nombre debe tener al menos 2 caracteres">
+                <input type="text" id="nombre" name="nombre" class="form__input" placeholder="Ej. Juan Pérez López" required autocomplete="name" pattern=".{2,}" title="El nombre debe tener al menos 2 caracteres" autocapitalize="words" spellcheck="false">
                 <span class="form__error">Por favor ingrese su nombre completo.</span>
               </div>
               <div class="form__group">
                 <label for="correo" class="form__label">Correo electrónico</label>
-                <input type="email" id="correo" name="correo" class="form__input" placeholder="Ej. juan@ejemplo.com" required autocomplete="email">
+                <input type="email" id="correo" name="correo" class="form__input" placeholder="Ej. juan@ejemplo.com" required autocomplete="email" autocapitalize="none" spellcheck="false" inputmode="email">
                 <span class="form__error">Por favor ingrese un correo electrónico válido.</span>
               </div>
               <div class="form__group">
                 <label for="telefono" class="form__label">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" class="form__input" placeholder="Ej. 0412 123 4567" autocomplete="tel" pattern="[\d\s\+\-\(\)]{7,15}" title="Ingrese un número telefónico válido">
+                <input type="tel" id="telefono" name="telefono" class="form__input" placeholder="Ej. 0412 123 4567" autocomplete="tel" pattern="[\d\s\+\-\(\)]{7,15}" title="Ingrese un número telefónico válido" inputmode="tel" spellcheck="false">
                 <span class="form__error">Por favor ingrese un número telefónico válido.</span>
               </div>
               <div class="form__group">
@@ -406,7 +406,7 @@
                 <textarea id="mensaje" name="mensaje" class="form__textarea" rows="4" placeholder="Describa brevemente su caso o consulta..." required maxlength="2000"></textarea>
                 <span class="form__error">Por favor escriba un mensaje.</span>
               </div>
-              <button type="submit" class="btn btn--primary form__btn">Enviar Mensaje</button>
+              <button type="submit" class="btn btn--primary form__btn"><span class="btn__text">Enviar Mensaje</span></button>
             </form>
             <div class="form__success" id="form-success">
               <div class="form__success-icon" aria-hidden="true">
@@ -655,7 +655,7 @@
             var successEl = document.getElementById('form-success');
             var btn = formEl.querySelector('.form__btn');
             btn.disabled = true;
-            btn.textContent = 'Enviando...';
+            btn.classList.add('btn--loading');
             fetch(formEl.action, {
               method: 'POST',
               body: new FormData(formEl),
@@ -672,7 +672,7 @@
               alert('Error de conexión. Verifique su internet e intente de nuevo.');
             }).finally(function() {
               btn.disabled = false;
-              btn.textContent = 'Enviar Mensaje';
+              btn.classList.remove('btn--loading');
             });
           }
         });
